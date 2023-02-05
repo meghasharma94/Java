@@ -10,6 +10,10 @@ public class MultipleInheritanceExample implements InterfaceA, InterfaceB, Inter
         multipleInheritanceExample.sumC(80, 50);
         multipleInheritanceExample.multiply(12, 3);
 
+        System.out.println("Subtract InterfaceB :" + InterfaceB.subtract(4, 2));
+        System.out.println("Subtract InterfaceC :" + InterfaceC.subtract(48, 72));
+
+
     }
 
     public void sumC(int a, int b) {
