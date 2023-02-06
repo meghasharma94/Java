@@ -4,6 +4,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class CalculatorTest {
     @BeforeAll
     static void before_all(TestInfo testInfo) {
@@ -25,18 +26,21 @@ class CalculatorTest {
         System.out.println("Clean up environment after each test" + info.getDisplayName());
     }
 
+    @Order(1)
     @DisplayName("Test Addition Success")
     @Test
     void test_addition_success() {
         assertEquals(5, Calculator.add(2, 3));
     }
 
+    @Order(2)
     @DisplayName("Test Addition Failure")
     @Test
     void test_addition_failure() {
         assertNotEquals(0, Calculator.add(1, 0));
     }
 
+    @Order(3)
     @DisplayName("Test Multiplication Success")
     @Test
     void test_multiply_assertTrue() {
