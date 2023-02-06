@@ -1,5 +1,6 @@
-package com.ilearn.junit;
+package com.ilearn.junit.tests;
 
+import com.ilearn.junit.Calculator;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -30,7 +31,7 @@ class CalculatorTest {
     @DisplayName("Test Addition Success")
     @Test
     void test_addition_success() {
-        assertEquals(5, Calculator.add(2, 3));
+        Assertions.assertEquals(5, Calculator.add(2, 3));
     }
 
     @Order(2)

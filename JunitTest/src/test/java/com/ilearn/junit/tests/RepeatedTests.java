@@ -1,5 +1,6 @@
-package com.ilearn.junit;
+package com.ilearn.junit.tests;
 
+import com.ilearn.junit.Calculator;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.RepetitionInfo;
